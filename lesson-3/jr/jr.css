@@ -1,0 +1,61 @@
+body.background {
+	/*background-image: url("ocean.jpg");*/
+	/*opacity: 0.6;*/
+
+}
+
+header.header {
+	background-color: #A74946;
+	padding: 1em;
+	width: 100%;
+}
+
+.profile {
+	text-align: center;
+}
+.profile img {
+	border-radius: 50%;
+	border: .2em solid #A74946;
+	margin: 1em;
+}
+
+.name {
+    text-align:  center;
+    font-size: xx-large;
+    margin: 0px;
+    padding: 0px;
+}
+.small {
+	font-size: x-small;
+	text-transform: uppercase;
+}
+
+.call {
+	width: 100%;
+	height: 4em;
+	border: 1px solid #41CE1B;
+	font-size: 1em;
+	text-transform: uppercase;
+	text-align: center;
+	margin-bottom: 1em;
+}
+
+.text {
+	width: 100%;
+	height: 4em;
+	border: 1px solid rgb(255, 118, 30);
+	font-size: 1em;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.content {
+	width: 100%;
+	text-align: center;
+	padding: 1em;
+	margin-top: 1em;
+}
+
+footer {
+	text-align: center;
+}
