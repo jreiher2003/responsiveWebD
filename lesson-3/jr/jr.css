@@ -1,17 +1,32 @@
+html { 
+ /* -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;*/
+}
+
 body.background {
-	/*background-image: url("ocean.jpg");*/
 	/*opacity: 0.6;*/
+  /*background: url("ocean.jpg"); 
+  background-repeat:no-repeat;
+  background-size:contain;
+  background-position:center;*/
 
 }
 
 header.header {
-	background-color: #A74946;
+	background-color: #CC5D59;
 	padding: 1em;
 	width: 100%;
 }
 
 .profile {
 	text-align: center;
+	/*background-image: url("ocean.jpg");
+	background-repeat: no-repeat;
+	width: 100%;
+	height: auto;
+	max-width: 100%;*/
 }
 .profile img {
 	border-radius: 50%;
@@ -56,6 +71,46 @@ header.header {
 	margin-top: 1em;
 }
 
+a {
+    text-transform: uppercase;
+    font-size: .75em;
+}
+
+ul.dropdown-menu {
+    /*display: block;*/
+    background-color: black;
+    opacity: .8;
+    border-radius: 5%;
+    margin-top: 1em;
+}
+
+.dropdown-menu>li>a {
+	display: block;
+    padding: 3px 20px;
+    clear: both;
+    font-weight: 400;
+    line-height: 1.42857143;
+    color: #F5EAEA;
+    white-space: nowrap;
+    background-color: #150101;
+}
+
+
 footer {
 	text-align: center;
+	background-color: #793533;
+	color: white;
 }
+
+footer a {
+	color: white;
+
+}
+footer a:hover {
+	text-decoration: none;
+	color: green;
+}
+
+
+
+/*    *?
