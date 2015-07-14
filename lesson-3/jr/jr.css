@@ -5,12 +5,13 @@ html {
   background-size: cover;*/
 }
 
-body.background {
+body {
 	/*opacity: 0.6;*/
   /*background: url("ocean.jpg"); 
   background-repeat:no-repeat;
   background-size:contain;
   background-position:center;*/
+  background-color: red;
 
 }
 
@@ -113,4 +114,12 @@ footer a:hover {
 
 
 
-/*    *?
+ @media screen and (min-width: 401px) and (max-width: 599px) {
+       /* tablets */
+        body { background-color: green; }
+      }
+
+      @media screen and (min-width: 600px) {
+      	/* desktop */
+        body { background-color: blue; }
+      }
