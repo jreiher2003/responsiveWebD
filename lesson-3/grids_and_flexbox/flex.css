@@ -1,20 +1,27 @@
 
 .box {
-	height: 100px;
+	height: auto;
 	text-align: center;
 	width: 100%;
 	border: 1px solid black;
+    /*margin-bottom: 2em;
+    padding: .5em;*/
 }
 
 .container {
-	display: flex;
-	flex-wrap: wrap;
+   display: -webkit-flex; /* Safari */
+    -webkit-flex-wrap: wrap; /* Safari 6.1+ */
+    display: flex;   
+    flex-wrap: wrap;
 }
 .lime { 
 	background-color: lime;
 }
 .dark_blue { 
 	background-color: blue; 
+}
+.orange {
+	background-color: orange;
 }
 .red { 
 	background-color: red; 
@@ -29,9 +36,9 @@ footer {
 
 @media screen and (min-width: 400px) and (max-width: 750px) {
 	header.lime { width: 100%; order: 0; }
-	.red { width: 50%; order: 1; }
+	.red { width: 49%; order: 1; }
 	.green { width: 50%; order: 2; }
-	.lime { width: 33%; order: 3; }
+	.orange { width: 33%; order: 3; }
 	.dark_blue { width: 66%; order: 4;}
 	footer { width: 100%; order: 5; }
 }
