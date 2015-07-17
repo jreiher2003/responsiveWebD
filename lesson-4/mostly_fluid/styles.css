@@ -20,6 +20,28 @@ body {
   color: #fff;
   text-align: center;
 }
+.new {
+	font-family: 'Lobster', cursive;
+}
+.pacif {
+	font-family: 'Pacifico', cursive;
+}
+.sho {
+	font-family: 'Shojumaru', cursive;
+}
+.dip {
+	font-family: 'Diplomata SC', cursive;
+	/* font-size: .5em; */
+	font-weight: lighter;
+	font-style: italic;
+	border: 1px solid black;
+	padding: 10px;
+	margin-bottom: 20px;
+	text-overflow: ellipsis;
+	width: 100%%;
+	font-size: .5em;
+	color: rgb(7, 152, 80);
+}
 
 
 .container {
@@ -62,9 +84,13 @@ body {
 	.yellow, .red, .orange {
 		width: 33.333%;
 	}
+	.dip {
+		width: 66.66%;
+		
+}
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 850px) {
 	.container {
 		width: 700px;
 		margin-left: auto;
@@ -74,4 +100,13 @@ body {
 		text-align: center;
 		margin-bottom: 20px;
 	}
+	.dip {
+		margin: auto auto;
+		width: 75%;
+		color: coral;
+	}
+	.new, .pacif, .sho, .dip{
+		text-align: center;
+	}
+	
 }
