@@ -18,6 +18,7 @@ body {
 .font-effect-neon {
   text-shadow: 0 0 0.1em #987979, 0 0 0.2em #fff, 0 0 0.3em #fff, 0 0 0.4em #200420,0 0 0.6em #794179, 0 0 0.8em #000DFF, 0 0 1.0em #1A00FF, 0 0 1.2em #1225E5;
   color: #fff;
+  text-align: center;
 }
 
 
@@ -42,4 +43,35 @@ body {
 }
 .red {
 	background-color: red;
+}
+.orange {
+	background-color: orange;
+}
+
+@media screen and (min-width: 450px) {
+	.font-effect-neon {
+		text-align: left;
+	}
+	.green, .yellow {
+		width: 50%;
+	}
+}
+
+@media screen and (min-width: 550px) {
+	.blue, .green { width: 50% ;}
+	.yellow, .red, .orange {
+		width: 33.333%;
+	}
+}
+
+@media screen and (min-width: 700px) {
+	.container {
+		width: 700px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.font-effect-neon {
+		text-align: center;
+		margin-bottom: 20px;
+	}
 }
