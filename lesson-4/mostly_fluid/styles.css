@@ -1,0 +1,45 @@
+body {
+  font-family: 'Rancho', serif;
+  font-size: 48px;
+  text-shadow: 4px 4px 4px #aaa;
+}
+/* latin */
+@font-face {
+  font-family: 'Rancho';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Rancho'), url(http://fonts.gstatic.com/s/rancho/v6/S-YcqhLwgYWxIA-a7eDp2g.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+.font-effect-shadow-multiple {
+  text-shadow: .04em .04em 0 #fff,.08em .08em 0 #aaa;
+  -webkit-text-shadow: .04em .04em 0 #fff, .08em .08em 0 #aaa;
+}
+.font-effect-neon {
+  text-shadow: 0 0 0.1em #987979, 0 0 0.2em #fff, 0 0 0.3em #fff, 0 0 0.4em #200420,0 0 0.6em #794179, 0 0 0.8em #000DFF, 0 0 1.0em #1A00FF, 0 0 1.2em #1225E5;
+  color: #fff;
+}
+
+
+.container {
+	display: flex;
+	flex-wrap: wrap;
+}
+.box {
+	width: 100%;
+	height: 100px;
+}
+
+
+.blue {
+	background-color: blue;
+}
+.green {
+	background-color: green;
+}
+.yellow {
+	background-color: yellow;
+}
+.red {
+	background-color: red;
+}
