@@ -59,6 +59,7 @@ body {
 }
 .green {
 	background-color: green;
+	text-align: center;
 }
 .yellow {
 	background-color: yellow;
@@ -80,10 +81,13 @@ body {
 }
 
 @media screen and (min-width: 550px) {
-	.blue, .green { width: 50% ;}
+	.blue, .green { width: 50% ; text-align: center; padding-top: 20px; padding-left: 20;}
 	.yellow, .red, .orange {
-		width: 33.333%;
-	}
+		width: 100%;
+	
+		text-align: center;
+		padding-top: 20px;
+}
 	.dip {
 		width: 66.66%;
 		
