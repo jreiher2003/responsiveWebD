@@ -1,0 +1,7 @@
+html, body, h1, h2, h3,
+a, ol, ul, li, button, input {
+	font-size: 1em;
+}
+h2 {
+	color: red;
+}
