@@ -1,0 +1,35 @@
+application: brightontimes
+version: 1
+runtime: python27
+api_version: 1
+threadsafe: true
+
+default_expiration: "5d"
+
+builtins:
+- appstats: on
+- admin_redirect: on
+- deferred: on
+- remote_api: on
+
+
+handlers:
+- url: /favicon.ico
+  static_files: b_times/static/img/favicon.ico
+  upload: b_times/static/img/favicon.ico
+
+- url: /robots.txt
+  static_files: b_times/static/robots.txt
+  upload: b_times/static/robots.txt
+
+- url: /gae_mini_profiler/static
+  static_dir: lib/gae_mini_profiler/static
+
+- url: /gae_mini_profiler/.*
+  script: lib.gae_mini_profiler.main.b_times
+
+- url: /static
+  static_dir: b_times/static
+
+- url: .*
+  script: run.b_times.app
