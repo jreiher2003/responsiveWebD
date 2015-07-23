@@ -37,5 +37,9 @@ handlers:
   static_files: b_times/static/\1
   upload: static/.*\.(gif|png|jpg)$
 
+- url: /admin/.*
+  script: admin.app
+  login: admin
+
 - url: .*
   script: run.b_times.app
