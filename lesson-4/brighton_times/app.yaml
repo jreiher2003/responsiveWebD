@@ -28,8 +28,14 @@ handlers:
 - url: /gae_mini_profiler/.*
   script: lib.gae_mini_profiler.main.b_times
 
+# set url to find static folder
 - url: /static
   static_dir: b_times/static
+
+# set url to images folder
+- url: /(.*\.(gif|png|jpg))$
+  static_files: b_times/static/\1
+  upload: static/.*\.(gif|png|jpg)$
 
 - url: .*
   script: run.b_times.app
