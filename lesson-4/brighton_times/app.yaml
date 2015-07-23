@@ -4,7 +4,11 @@ runtime: python27
 api_version: 1
 threadsafe: true
 
-default_expiration: "5d"
+# sets cache-control and experation 
+#but does not re set any caches so 
+#10-min expiration time on redeployment
+
+# default_expiration: "5d"
 
 builtins:
 - appstats: on
