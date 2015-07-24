@@ -58,6 +58,7 @@ ul {
   height: auto;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom:  0;
 }
 
 .header__logo {
@@ -68,10 +69,18 @@ ul {
 
 .header__title {
   font-weight: 300;
+<<<<<<< HEAD
   font-size: 3em;
+||||||| merged common ancestors
+  font-size: 4em;
+=======
+  font-size: 2em;
+>>>>>>> finished app with page breaks for flex-box
   margin: 0.5em 0.25em;
   display: inline-block;
   color: #212121;
+  /* margin-bottom: 0; */
+  /* width: 100%; */
 }
 
 
@@ -369,6 +378,7 @@ footer a {
   color: #333;
   padding: 1.5em;
 }
+<<<<<<< HEAD
 
 
 @media screen and (min-width: 559px) {
@@ -420,3 +430,7 @@ footer a {
     width: 100%;
    }
 }
+||||||| merged common ancestors
+=======
+
+>>>>>>> finished app with page breaks for flex-box
