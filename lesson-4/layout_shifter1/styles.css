@@ -1,4 +1,4 @@
-.content {
+.container {
 	width: 100%;
 	display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
 	display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
@@ -32,4 +32,17 @@ footer {
 	width: 100%;
 	height: 100px;
 	background-color: black;
+}
+
+@media screen and (min-width: 500px) {
+	header {
+		width: 33.33%;
+		height: 180px;
+		/*order: -1;*/
+	}
+	#container2 {
+		width: 66.66%;
+		/*height: 400px;*/
+		/*order: 1;*/
+	}
 }
