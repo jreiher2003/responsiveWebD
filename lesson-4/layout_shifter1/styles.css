@@ -1,3 +1,8 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
 .container {
 	width: 100%;
 	display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
@@ -9,11 +14,21 @@
 }
 header {
 	width: 100%;
+	height: 25px;
+	background-color: grey;
+}
+.blue {
+	width: 100%;
 	height: 60px;
 	background-color: blue;
 }
 .red {
 	background-color: red;
+	height: 90px;
+	width: 100%;
+}
+.orange {
+	background-color: orange;
 	height: 90px;
 	width: 100%;
 }
@@ -36,13 +51,52 @@ footer {
 
 @media screen and (min-width: 500px) {
 	header {
+		width: 100%%;
+		/*height: 180px;*/
+		order: -1;
+	}
+	.blue {
 		width: 33.33%;
-		height: 180px;
-		/*order: -1;*/
+		height: 270px;
+		order: 0;
 	}
 	#container2 {
 		width: 66.66%;
-		/*height: 400px;*/
-		/*order: 1;*/
+		order: 1;
+	}
+	.yellow {
+		order: 2;
+	}
+	footer {
+		order: 3;
+	}
+}
+
+@media screen and (min-width: 750px) {
+	header {
+		width: 100%;
+		/*order: -1;*/
+	}
+	.blue {
+		width: 25%;
+		order: -1;
+	}
+	#container2 {
+		width: 50%;
+		order: 0;
+	}
+	.yellow {
+		width: 25%;
+		height: 270px;
+		order: 1;
+	}
+	footer {
+		order: 2;
+	}
+}
+@media screen and (min-width: 850px) {
+	.container {
+		width: 850px;
+		margin: auto;
 	}
 }
